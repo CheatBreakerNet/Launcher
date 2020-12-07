@@ -1,5 +1,5 @@
-# Beta-Launcher
-The official Offline CheatBreaker repository for downloading the Beta launcher
+# Launcher
+The official Offline CheatBreaker repository for downloading our launcher!
 
 More info can be found on our [website](http://offlinecheatbreaker.com).
 
