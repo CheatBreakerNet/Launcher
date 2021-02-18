@@ -1,5 +1,5 @@
 # Launcher
-The official Offline CheatBreaker repository for downloading our launcher!
+The official repository for downloading the Offline CheatBreaker Launcher!
 
 More info can be found on our [website](http://offlinecheatbreaker.com).
 
