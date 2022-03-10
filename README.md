@@ -2,7 +2,6 @@
 The official repository for downloading the Offline CheatBreaker Launcher!
 
 [![Releases](https://img.shields.io/github/release/Offline-CheatBreaker/Launcher.svg)](https://github.com/Offline-Cheatbreaker/Launcher/releases)
-[![Issues](https://img.shields.io/github/issues/Offline-CheatBreaker/Launcher)](https://github.com/Offline-CheatBreaker/Launcher/issues)
 [![Pull Requests](https://img.shields.io/github/issues-pr/Offline-CheatBreaker/Launcher)](https://github.com/Offline-CheatBreaker/Launcher/pulls)
 <a href="https://discord.offlinecheatbreaker.com"><img src="https://discordapp.com/api/guilds/633325309395206156/widget.png?style=shield" alt="Discord Server"></a>
 
