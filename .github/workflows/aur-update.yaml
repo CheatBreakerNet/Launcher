@@ -19,8 +19,23 @@ jobs:
           exclude_types: "draft|prerelease"
           view_top: 1
 
+      - uses: dsaltares/fetch-gh-release-asset@master
+        with:
+          repo: "dsaltares/godot-wild-jam-18"
+          version: "tags/${{ steps.latest_release.outputs.tag_name }}"
+          file: "Offline_CheatBreaker.AppImage"
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: MCJack123/ghaction-generate-release-hashes@v3
+        id: appimage_hash
+        with:
+          hash-type: md5
+          file-name: Offline_CheatBreaker.AppImage
+
       - name: Update the PKG version in the PKGBUILD
-        run: sed -i 's/^pkgver=.*/pkgver=${{ steps.latest_release.outputs.tag_name }}/' ./AUR/PKGBUILD
+        run: |
+          sed -i 's/^pkgver=.*/pkgver=${{ steps.latest_release.outputs.tag_name }}/' ./AUR/PKGBUILD
+          sed -i `s/^md5sums=.*/md5sums=('${{ steps.appimage_hash.outputs.hashes }}')/` ./AUR/PKGBUILD
 
       - name: Publish AUR package
         uses: KSXGitHub/github-actions-deploy-aur@v2.7.0
