@@ -7,9 +7,9 @@ The official repository for downloading the Offline CheatBreaker Launcher!
 
 [![amd64](https://img.shields.io/badge/amd64-yes-green.svg)](https://offlinecheatbreaker.com/download/)
 ![i386](https://img.shields.io/badge/i386-no-red.svg)
-[![Windows](https://img.shields.io/badge/Windows-yes-green.svg)](https://github.com/Offline-CheatBreaker/Client/wiki/Windows-installation-instructions)
-[![macOS](https://img.shields.io/badge/macOS-yes-green.svg)](https://github.com/Offline-CheatBreaker/Client/wiki/MacOS-installation-instructions)
-[![Linux](https://img.shields.io/badge/Linux-yes-green.svg)](https://github.com/Offline-CheatBreaker/Client/wiki/Linux-(Other)-installation-instructions)
+[![Windows](https://img.shields.io/badge/Windows-yes-green.svg)](https://offlinecheatbreaker.com/instructions-windows)
+[![macOS](https://img.shields.io/badge/macOS-yes-green.svg)](https://offlinecheatbreaker.com/instructions-macos)
+[![Linux](https://img.shields.io/badge/Linux-yes-green.svg)](https://offlinecheatbreaker.com/instructions-linux)
 
 More info can be found on our [website](https://offlinecheatbreaker.com).
 
