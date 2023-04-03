@@ -23,7 +23,7 @@ jobs:
         run: sed -i 's/^pkgver=.*/pkgver=${{ steps.latest_release.outputs.id }}/' ./AUR/PKGBUILD
 
       - name: Publish AUR package
-        uses: KSXGitHub/github-actions-deploy-aur@2
+        uses: KSXGitHub/github-actions-deploy-aur@v2.7.0
         with:
           pkgname: offline-cheatbreaker
           pkgbuild: ./AUR/PKGBUILD
