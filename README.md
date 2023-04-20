@@ -11,4 +11,6 @@ The official repository for downloading the CheatBreaker Launcher!
 [![macOS](https://img.shields.io/badge/macOS-yes-green.svg)](https://cheatbreaker.net/instructions-macos)
 [![Linux](https://img.shields.io/badge/Linux-yes-green.svg)](https://cheatbreaker.net/instructions-linux)
 
-More info can be found on our [website](https://cheatbreaker.net).
+More info can be found on our [website](https://cheatbreaker.net)
+
+Not affiliated with CheatBreaker, LLC
