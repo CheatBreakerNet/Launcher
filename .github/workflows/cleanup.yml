@@ -1,0 +1,22 @@
+on:
+  release:
+    types: [published]
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: master
+          fetch-depth:
+      - name: Get previous release tag
+        id: previous-release
+        uses: actions/get-previous-release-action@v1
+      
+      - name: Delete old release assets
+        uses: mknejp/delete-release-assets@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          tag: ${{ steps.previous-release.output.release }}
+          assets: CheatBreaker*
