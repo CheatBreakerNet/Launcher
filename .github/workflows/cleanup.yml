@@ -14,9 +14,9 @@ jobs:
         id: previous-release
         run: echo "tag=$(git tag --sort "-committerdate" | cut -d$'\n' -f2)" >> $GITHUB_OUTPUT
       
-      #- name: Delete old release assets
-      #  uses: mknejp/delete-release-assets@v1
-      #  with:
-      #    token: ${{ secrets.GITHUB_TOKEN }}
-      #    tag: ${{ steps.previous-release.outputs.tag }}
-      #    assets: CheatBreaker*
+      - name: Delete old release assets
+        uses: mknejp/delete-release-assets@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          tag: ${{ steps.previous-release.outputs.tag }}
+          assets: CheatBreaker*
