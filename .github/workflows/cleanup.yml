@@ -1,4 +1,5 @@
 on:
+  workflow_dispatch:
   release:
     types: [published]
 
@@ -12,7 +13,7 @@ jobs:
           fetch-depth:
       - name: Get previous release tag
         id: previous-release
-        uses: actions/get-previous-release-action@v1
+        uses: sammcoe/get-previous-release-action@v1
       
       - name: Delete old release assets
         uses: mknejp/delete-release-assets@v1
