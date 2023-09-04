@@ -12,11 +12,11 @@ jobs:
           fetch-depth: 0
       - name: Get previous release tag
         id: previous-release
-        uses: WyriHaximus/github-action-get-previous-tag@v1
+        uses: younited/get-previous-tag-action@v1.0.0
       
-      - name: Delete old release assets
-        uses: mknejp/delete-release-assets@v1
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          tag: ${{ steps.previous-release.outputs.tag }}
-          assets: CheatBreaker*
+      #- name: Delete old release assets
+      #  uses: mknejp/delete-release-assets@v1
+      #  with:
+      #    token: ${{ secrets.GITHUB_TOKEN }}
+      #    tag: ${{ steps.previous-release.outputs.previous-tag }}
+      #    assets: CheatBreaker*
