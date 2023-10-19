@@ -13,7 +13,7 @@ jobs:
 
       - name: "Get the latest release"
         id: latest_release
-        uses: InsonusK/get-latest-release@v1.0.1
+        uses: InsonusK/get-latest-release@v1.1.0
         with:
           myToken: ${{ secrets.GITHUB_TOKEN }}
           exclude_types: "draft|prerelease"
