@@ -42,7 +42,7 @@ jobs:
           sed -i "s#^md5sums_arm64=.*#md5sums_arm64=('$(md5sum ./CheatBreaker-ARM64.AppImage | cut -d' ' -f1)')#" ./AUR/PKGBUILD
 
       - name: Publish AUR package
-        uses: KSXGitHub/github-actions-deploy-aur@v2.7.0
+        uses: KSXGitHub/github-actions-deploy-aur@v2.7.1
         with:
           pkgname: cheatbreaker
           pkgbuild: ./AUR/PKGBUILD
