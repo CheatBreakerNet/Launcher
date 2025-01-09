@@ -19,21 +19,10 @@ jobs:
           exclude_types: "draft|prerelease"
           view_top: 1
 
-      - name: Fetch the AppImage for x86_64
-        uses: dsaltares/fetch-gh-release-asset@master
-        with:
-          repo: "CheatBreakerNet/Launcher"
-          version: "tags/${{ steps.latest_release.outputs.tag_name }}"
-          file: "CheatBreaker.AppImage"
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Fetch the AppImage for arm64
-        uses: dsaltares/fetch-gh-release-asset@master
-        with:
-          repo: "CheatBreakerNet/Launcher"
-          version: "tags/${{ steps.latest_release.outputs.tag_name }}"
-          file: "CheatBreaker-ARM64.AppImage"
-          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Fetch the AppImages
+        run: |
+          wget -q https://r2.cheatbreaker.net/Launcher/master/Linux/amd64/CheatBreaker.AppImage
+          wget -q https://r2.cheatbreaker.net/Launcher/master/Linux/arm64/CheatBreaker-ARM64.AppImage
 
       - name: Update the PKG version and md5sums in the PKGBUILD
         run: |
