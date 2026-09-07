@@ -8,7 +8,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v7
       - name: Github Releases To Discord
-        uses: SethCohen/github-releases-to-discord@master
+        uses: SethCohen/github-releases-to-discord@v1.20.0
         with:
           webhook_url: ${{ secrets.WEBHOOK_URL }}
           color: "14303827"
@@ -16,3 +16,6 @@ jobs:
           footer_title: "Launcher Update"
           footer_icon_url: "https://cheatbreaker.net/v/images/logo-108.png"
           footer_timestamp: true
+          reduce_headings: true
+          max_description: 4096
+
